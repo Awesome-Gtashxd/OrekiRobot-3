@@ -9,10 +9,15 @@ async def awake(event):
     OREKI = """
     ⊛ New Fonts Module Added✅ ⊛
     ⊛ New Google Module Added✅ ⊛
-    ⊛ Image Searching Module Added✅ ⊛
-    * Running On New Repo✅ *
-    * Almost All Errors Fixed ✅ *
-    * UI Changed ✅ *
-    * You can Rename Files ✅ *
+    **⊛ New Image Searching Module Added✅ ⊛**
+    **⊛ New Zip/Unzip Module Added✅ ⊛**
+    ⊛ Almost All Errors Fixed✅ ⊛
+    **⊛ New Url Uploader Module Added✅ ⊛**
+    **⊛ Pm/Dm Start was Updated✅ ⊛**
+    **⊛ New Waifu Module Added✅ ⊛**
+    **⊛ Youtube Video & Song Uploader Module Added✅ ⊛**
+    **⊛ Special Update: New Files Renamer Module Added✅ ⊛**
+
+      **Next Update is Comming on 20th March**
 """
     await oreki.send_file(event.chat_id, PHOTO, caption=OREKI)
