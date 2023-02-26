@@ -230,13 +230,13 @@ pgram = Client(
 
 # Credits Logger
 print(
-    "[OrekiRobot] Oreki Is Starting. | Gtash Network Project | BSD 2-Clause License."
+    "[OrekiRobot] Prince Oreki Is Starting. | Gtash Network Project | BSD 2-Clause License."
 )
 print(
     "[OrekiRobot] Iam here! Successfully Connected with Gtash Network • Data Center • Coimbatore"
 )
 print(
-    "[OrekiRobot] Project Maintained By: github.com/Awesome-Gtash (https://github.com/Awesome-Gtash/OrekiRobot-3)"
+    "[OrekiRobot] Project Maintained By: github.com/Awesome-Gtash (https://github.com/Awesome-Gtashxd/OrekiRobot-3)"
 )
 
 print("[OrekiRobot]: Telegraph Installing")
@@ -273,11 +273,11 @@ aiohttpsession = ClientSession()
 print("[INFO]: INITIALIZING ARQ CLIENT")
 arq = ARQ("https://thearq.tech", "YIECCC-NAJARO-OLLREW-SJSRIP-ARQ", aiohttpsession)
 print(
-    "[OrekiRobot]: Connecting To White Tiger • Data Center • Coimbatore • PostgreSQL Database"
+    "[OrekiRobot]: Connecting To Gtash Network • Data Center • Coimbatore • PostgreSQL Database"
 )
 ubot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
 print(
-    "[OrekiRobot]: Connecting To White Tiger • Oreki Userbot (https://telegram.dog/Oreki_Assistant)"
+    "[OrekiRobot]: Connecting To Gtash Network • Oreki Userbot (https://telegram.dog/Oreki_Assistant)"
 )
 timeout = httpx.Timeout(40)
 http = httpx.AsyncClient(http2=True, timeout=timeout)
