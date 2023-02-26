@@ -118,19 +118,13 @@ buttons = [
     [
         InlineKeyboardButton(text="🎗️ Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Source Code 🖤",
-            url=f"https://github.com/Awesome-Gtashxd/OrekiRobot-3.git",
+            text="🚑 Support", url=f"https://telegram.dog/Gtash_Association"
         ),
     ],
     [
-        InlineKeyboardButton(
-            text="🚑 Support", url=f"https://telegram.dog/Gtash_Association"
-        ),
         InlineKeyboardButton(
             text="📢 Updates", url=f"https://telegram.dog/Gtash_Updates"
         ),
-    ],
-    [
         InlineKeyboardButton(
             text="My Master 💌", url=f"https://telegram.dog/Awesome_Gtashxd"
         ),
