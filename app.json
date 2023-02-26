@@ -1,6 +1,6 @@
 {
-      "name": "Prince Oreki v3",
-      "description": "an anime Themed Advanced Group Management bot with a lot of cool features.",
+      "name": "Prince Oreki [Pro Version]",
+      "description": "an anime Themed Advanced Group Management bot with a lot of Powerful features.",
       "logo": "https://te.legra.ph/file/9b4b80b011fd5de41a35b.jpg",
       "keywords": [
          "telegram",
@@ -9,7 +9,7 @@
          "manager",
          "OrekiRobot"
       ],   
-   "repository": "https://github.com/Awesome-Gtash/OrekiRobot-3",
+   "repository": "https://github.com/Awesome-Gtashxd/OrekiRobot-3",
    "addons": [
       {
          "options": {
@@ -62,7 +62,7 @@
        "HELP_IMG": {
          "description": "Give Your Bot Group Help Image Link.",
          "required": true,
-         "value": ""
+         "value": "https://te.legra.ph/file/a4d4082e0f9b7ee0b2c41.jpg"
       },
       "OWNER_ID": {
          "description": "Replace Your user ID as an integer.",
@@ -82,7 +82,7 @@
       "SUPPORT_CHAT": {
          "description": "Replace Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
          "required": true,
-         "value": "Dev_SupportChat"
+         "value": "Gtash_Association"
       },
       "EVENT_LOGS": {
          "description": "Replace Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
@@ -167,7 +167,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you dont know leave it",
          "required": false,
-         "value": "t.me/Galaxy_Tamizh"
+         "value": "https://t.me/Galaxy_Tamil"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
