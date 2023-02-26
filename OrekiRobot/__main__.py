@@ -80,7 +80,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 HELP_MSG = "Click The Button Below To Get Help Menu In Your Dm."
-START_MSG = "I'm Awake Already!\n<b>Haven't Slept Since:</b> <code>{}</code>"
+START_MSG = "Hola, I'm awake already!\n<b>Oreki is Here Since:</b> <code>{}</code>"
 
 OREKI_STICKERS = (
     "CAACAgQAAx0CXn_ThAACDM5j9IyGH8BGp8qDTTnv35zHWvZJcgAC2AoAApkBwVDFFzmCmWTH7y4E",
@@ -290,7 +290,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_animation(
             random.choice(GROUP_START_IMG),
-            caption=f"<b>Hola, I'm awake already!\nOreki Is Here since</b>: <code>{}</code>",
+            caption="<b>Hola, I'm awake already!\nOreki Is Here since</b>: <code>{}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
