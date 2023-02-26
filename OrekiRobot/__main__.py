@@ -99,10 +99,10 @@ PM_START_TEXT = """
 ❍ *Uptime ~* `{}`
 ❍ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Latest Update ~* 2/21/23
+❍ *Latest Update ~* 2/26/23
 ❍ *Version Name ~* Pro Version
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Next Version Update ~* 3/19/23
+❍ *Next Version Update ~* 3/20/23
 ❍ *Next Version Name ~* Ultimate Version
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➪ Hit The *Help* Button Below To Know My Powers ××
@@ -119,7 +119,7 @@ buttons = [
         InlineKeyboardButton(text="🎗️ Help", callback_data="help_back"),
         InlineKeyboardButton(
             text="Source Code 🖤",
-            url=f"https://github.com/Awesome-Gtash/OrekiRobot-3.git",
+            url=f"https://github.com/Awesome-Gtashxd/OrekiRobot-3.git",
         ),
     ],
     [
