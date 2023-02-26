@@ -284,10 +284,9 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_animation(
             random.choice(GROUP_START_IMG),
-            caption="<b>Hola, I'm awake already!\nHaven't sleep since</b>: <code>{uptime}</code>",
+            caption=f"<b>Hola, I'm awake already!\nHaven't sleep since</b>: <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                y_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
