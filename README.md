@@ -6,31 +6,26 @@
   <a href="https://github.com/Awesome-Gtash/OrekiRobot-3/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-Yes-red.svg?style=flat-square" /> </a>
 </p>
 
-<p align="center"><a href="https://t.me/OrekiProXBot"><img src="https://telegra.ph/file/765450f8a2e8fe4384dcb.jpg" width="600"></a></p>
+<p align="center"><a href="https://t.me/OrekiProXBot"><img src="https://te.legra.ph/file/a4d4082e0f9b7ee0b2c41.jpg" width="600"></a></p>
 
 
 
-## Oreki Is Available on Telegram as [@OrekiProXBot](https://t.me/Orekiproxbot)
+## OrekiRobot Is Available on Telegram as [@OrekiProXBot](https://t.me/Orekiproxbot)
 
 ## Deploy to Heroku 💌
 
 Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Awesome-Gtash/OrekiRobot-3"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Awesome-Gtashxd/OrekiRobot-3"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+
 
 ## Creditz
 	
 	
-- Owner: [Myaav Boi](https://github.com/Awesome-Gtash)
+- Owner: [The Gtash](https://github.com/Awesome-Gtashxd)
 - Dev: [Lovely Prince](https://github.com/Awesome-Prince)
 - Helper: [OTAZUKI](https://github.com/Otazuki004)
 <details>
-	<summary>Other Deploy Options</summary>
-
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?repository=https://github.com/Awesome-Gtash/OrekiRobot-3)
-
-<a href="https://railway.app"><img src="https://railway.app/button.svg" height="40"></a>
-
-</details> 
+	
 
 <details>
     <summary>More Deploy Options</summary>
@@ -42,7 +37,7 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 </p>
 
 ```console
-    ~$ git clone https://github.com/Awesome-Gtash/OrekiRobot-3.git
+    ~$ git clone https://github.com/Awesome-Gtashxd/OrekiRobot-3.git
     ~$ cd OrekiRobot
     ~$ cp sample_config.py config.py
 ```
