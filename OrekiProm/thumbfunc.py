@@ -1,6 +1,6 @@
 from pyrogram import filters
-from OrekiRobot import ND
-from OrekiRobot.database import find, delthumb, addthumb
+from OrekiProm import ND
+from OrekiProm.database import find, delthumb, addthumb
 
 @ND.on_message(filters.private & filters.command(['viewthumb']))
 async def viewthumb(client,message):
