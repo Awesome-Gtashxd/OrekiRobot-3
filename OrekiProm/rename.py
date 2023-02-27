@@ -3,12 +3,12 @@ import time
 import os
 
 from PIL import Image
-from OrekiRobot.helper import progress_for_pyrogram, convert
+from OrekiProm.helper import progress_for_pyrogram, convert
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
-from OrekiRobot import ND, PREFIX
+from OrekiProm import ND, PREFIX
 from pyrogram import filters
-from OrekiRobot.database import find, insert
+from OrekiProm.database import find, insert
 from pyrogram.types import ForceReply, InlineKeyboardMarkup, InlineKeyboardButton
 
 
