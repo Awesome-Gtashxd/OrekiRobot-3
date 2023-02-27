@@ -1,7 +1,7 @@
 from OrekiRobot import tbot as oreki
 from OrekiRobot.events import register
 
-PHOTO = "https://te.legra.ph/file/c4b3a0fb319744a2e41fd.jpg"
+PHOTO = "https://te.legra.ph/file/d9a595877810a3c73caa8.jpg"
 
 
 @register(pattern=("/updates"))
@@ -12,7 +12,7 @@ async def awake(event):
     **⊛ New Image Searching Module Added✅ ⊛**
     **⊛ New Zip/Unzip Module Added✅ ⊛**
     ⊛ Almost All Errors Fixed✅ ⊛
-    **⊛ New Url Uploader Module Added✅ ⊛**
+    ⊛ Almos✅ ⊛
     **⊛ Pm/Dm Start was Updated✅ ⊛**
     **⊛ New Waifu Module Added✅ ⊛**
     **⊛ Youtube Video & Song Uploader Module Added✅ ⊛**
