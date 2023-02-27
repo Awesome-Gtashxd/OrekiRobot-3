@@ -19,7 +19,7 @@ useragent = "Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) 
 opener.addheaders = [("User-agent", useragent)]
 
 
-@bot(pattern="^/google (.*)")
+@register(pattern="^/google (.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -50,7 +50,7 @@ async def _(event):
     )
 
 
-@bot(pattern="^/img (.*)")
+@register(pattern="^/img (.*)")
 async def img_sampler(event):
     if event.fwd_from:
         return
@@ -80,7 +80,7 @@ useragent = "Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) 
 opener.addheaders = [("User-agent", useragent)]
 
 
-@bot(pattern=r"^/reverse(?: |$)(\d*)")
+@register(pattern=r"^/reverse(?: |$)(\d*)")
 async def okgoogle(img):
     """For .reverse command, Google search images and stickers."""
     if os.path.isfile("okgoogle.png"):
