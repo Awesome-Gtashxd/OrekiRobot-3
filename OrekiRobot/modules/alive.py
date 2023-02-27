@@ -14,7 +14,6 @@ IMAGE = "https://te.legra.ph/file/344cdfc69c65647c10313.jpg"
 async def awake(event):
     OREKI = """
 **Hola I'm {BOT_NAME} ~ 🖤!**
-**My Uptime ~ 🖤:** `{}`\n\n
 **Python-Telegram-Bot Version ~ 🖤 :** `{ptb}`\n\n
 **Telethon Version ~ 🖤:** `{tlhver}`\n\n
 **Pyrogram Version ~ 🖤:** `{pyrover}`\n\n
