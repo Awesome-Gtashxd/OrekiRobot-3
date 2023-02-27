@@ -1,4 +1,4 @@
-from OrekiRobot import db
+from OrekiProm import db
 
 dbcol = db["user"]
 
