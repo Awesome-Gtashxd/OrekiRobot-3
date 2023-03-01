@@ -89,7 +89,7 @@ thumb_image_path = TEMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
 if not os.path.isdir(extracted):
     os.makedirs(extracted)
 
-__mod__: Zip
+__mod_name__ = "Zip"
 
 async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
@@ -207,4 +207,4 @@ def get_lst_of_files(input_directory, output_lst):
         output_lst.append(current_file_name)
     return output_lst
 
-__mod__: Unzip
+__mod_name__ = "Unzip"
