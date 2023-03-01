@@ -2,12 +2,16 @@ import os
 import time
 import zipfile
 
+from datetime import datetime
+from hachoir.metadata import extractMetadata
 from telethon import types
+from hachoir.parser import createParser
 from telethon.tl import functions
+from telethon.tl.types import DocumentAttributeVideo
 
-from YoneRobot import TEMP_DOWNLOAD_DIRECTORY
-from YoneRobot import tbot as oreki
-from YoneRobot.events import register
+from OrekiRobot import TEMP_DOWNLOAD_DIRECTORY
+from OrekiRobot import tbot as oreki
+from OrekiRobot.events import register
 
 
 async def is_register_admin(chat, user):
@@ -80,32 +84,27 @@ def zipdir(path, ziph):
             os.remove(os.path.join(root, file))
 
 
-from datetime import datetime
-
-from hachoir.metadata import extractMetadata
-from hachoir.parser import createParser
-from telethon.tl.types import DocumentAttributeVideo
-
 extracted = TEMP_DOWNLOAD_DIRECTORY + "extracted/"
 thumb_image_path = TEMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
 if not os.path.isdir(extracted):
     os.makedirs(extracted)
 
+__mod__: Zip
 
 async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
 
         return isinstance(
             (
-                await client(functions.channels.GetParticipantRequest(chat, user))
+                await oreki(functions.channels.GetParticipantRequest(chat, user))
             ).participant,
             (types.ChannelParticipantAdmin, types.ChannelParticipantCreator),
         )
     if isinstance(chat, types.InputPeerChat):
 
-        ui = await client.get_peer_id(user)
+        ui = await oreki.get_peer_id(user)
         ps = (
-            await client(functions.messages.GetFullChatRequest(chat.chat_id))
+            await oreki(functions.messages.GetFullChatRequest(chat.chat_id))
         ).full_chat.participants.participants
         return isinstance(
             next((p for p in ps if p.user_id == ui), None),
@@ -120,12 +119,12 @@ async def _(event):
         return
 
     if not event.is_reply:
-        await event.reply("Reply to a zip file.")
+        await event.reply("Reply to a zip file.⚠️")
         return
     if event.is_group:
         if not (await is_register_admin(event.input_chat, event.message.sender_id)):
             await event.reply(
-                "Hey, You are not admin. You can't use this command, But you can use in my pm 🙂"
+                "Hey, You are not admin. You can't use this command, But you can use in my dm ⚡"
             )
             return
 
@@ -137,7 +136,7 @@ async def _(event):
         reply_message = await event.get_reply_message()
         try:
             time.time()
-            downloaded_file_name = await client.download_media(
+            downloaded_file_name = await oreki.download_media(
                 reply_message, TEMP_DOWNLOAD_DIRECTORY
             )
         except Exception as e:
@@ -149,7 +148,7 @@ async def _(event):
         with zipfile.ZipFile(downloaded_file_name, "r") as zip_ref:
             zip_ref.extractall(extracted)
         filename = sorted(get_lst_of_files(extracted, []))
-        await event.reply("Unzipping now 😌")
+        await event.reply("Unzipping ⚡")
         for single_file in filename:
             if os.path.exists(single_file):
                 caption_rts = os.path.basename(single_file)
@@ -179,7 +178,7 @@ async def _(event):
                         )
                     ]
                 try:
-                    await client.send_file(
+                    await oreki.send_file(
                         event.chat_id,
                         single_file,
                         force_document=force_document,
@@ -189,7 +188,7 @@ async def _(event):
                         attributes=document_attributes,
                     )
                 except Exception as e:
-                    await client.send_message(
+                    await oreki.send_message(
                         event.chat_id,
                         "{} caused `{}`".format(caption_rts, str(e)),
                         reply_to=event.message.id,
@@ -207,3 +206,5 @@ def get_lst_of_files(input_directory, output_lst):
             return get_lst_of_files(current_file_name, output_lst)
         output_lst.append(current_file_name)
     return output_lst
+
+__mod__: Unzip
