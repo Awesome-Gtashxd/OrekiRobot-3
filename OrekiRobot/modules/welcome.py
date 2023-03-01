@@ -31,7 +31,7 @@ from OrekiRobot import (
     OWNER_ID,
     TIGERS,
     WOLVES,
-    sw,j!
+    sw,
 )
 from OrekiRobot.modules.helper_funcs.chat_status import is_user_ban_protected, user_admin
 from OrekiRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
