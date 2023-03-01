@@ -31,6 +31,7 @@ from OrekiRobot import (
     OWNER_ID,
     TIGERS,
     WOLVES,
+    sw,j!
 )
 from OrekiRobot.modules.helper_funcs.chat_status import is_user_ban_protected, user_admin
 from OrekiRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
@@ -69,7 +70,7 @@ VERIFIED_USER_WAITLIST = {}
 OREKI_IMG = "https://te.legra.ph/file/0cecfbdfaa34bcdfe8c9e.mp4"
 OREKI = "https://te.legra.ph/file/6ae7d7d72042c248a404f.jpg"
 OREKI_VID = "https://te.legra.ph/file/9735ea743e6cfe1b9aab2.mp4"
-WAIFUS_IMG = "https://te.legra.ph/file/0c6c107da4dd1ca540a9d.jpg"
+MEOW_IMG = "https://te.legra.ph/file/0c6c107da4dd1ca540a9d.jpg"
 
 
 # do not async
@@ -188,7 +189,7 @@ def new_member(update: Update, context: CallbackContext):
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_video(
                     OREKI_IMG,
-                    caption="Oh, Genos? Let's get this moving.",
+                    caption="Woow My Master Joined here!",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -201,7 +202,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Whoa! S Rank Hunter just joined!",
+                    "Whoa! S Rank Hunter joined Here!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -209,8 +210,8 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_photo(
-                    NEKO,
-                    caption="Huh! A Rank Hunter just joined! Stay Alert!",
+                    OREKI,
+                    caption="Whoa! A Rank Hunter joined Here! Stay Alert!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -218,8 +219,8 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Support
             elif new_mem.id in DEMONS:
                 update.effective_message.reply_photo(
-                    NEKO,
-                    caption="Huh! Someone with a B Rank Hunter level just joined!",
+                    OREKI,
+                    caption="Whoa! B Rank Hunter joined Here!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -227,8 +228,8 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Whitelisted
             elif new_mem.id in TIGERS:
                 update.effective_message.reply_photo(
-                    NEKO,
-                    caption="Oof! a C Rank Hunter just joined!",
+                    OREKI,
+                    caption="Whoa! C Rank Hunter joined Here!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -237,7 +238,7 @@ def new_member(update: Update, context: CallbackContext):
             elif new_mem.id in WOLVES:
                 update.effective_message.reply_photo(
                     OREKI,
-                    caption="Oof! a D Rank Hunter just joined!",
+                    caption="Whoa! D Rank Hunter joined Here!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -245,7 +246,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome yourself
             elif new_mem.id == bot.id:
                 update.effective_message.reply_photo(
-                    WAIFUS_IMG,
+                    MEOW_IMG,
                     caption="Hey {}, I'm {}! Thank you for adding me to {}\n"
                     "Join support and channel update with clicking button below!".format(
                         user.first_name, context.bot.first_name, chat.title
@@ -257,11 +258,11 @@ def new_member(update: Update, context: CallbackContext):
                             [
                                 InlineKeyboardButton(
                                     text="Support 🚑",
-                                    url=f"https://t.me/Tiger_SupportChat",
+                                    url=f"https://t.me/Gtash_Association",
                                 ),
                                 InlineKeyboardButton(
                                     text="Updates 📢",
-                                    url="https://t.me/Tiger_Updates",
+                                    url="https://t.me/Gtash_Updates",
                                 ),
                             ]
                         ]
