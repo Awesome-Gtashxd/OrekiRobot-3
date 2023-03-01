@@ -208,3 +208,7 @@ def get_lst_of_files(input_directory, output_lst):
     return output_lst
 
 __mod_name__ = "Unzip"
+__help__ = """
+• `/zip`*:* Reply to a Non-Zipped File.
+• `/unzip`*:* Reply to a Zipped File.
+"""
