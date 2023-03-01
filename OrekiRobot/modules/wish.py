@@ -7,12 +7,6 @@ from OrekiRobot import tbot as oreki
 
 @oreki.on(events.NewMessage(pattern="/wish ?(.*)"))
 async def wish(e):
-quew = event.pattern_match.group(1)
-    if event.sender_id != OWNER_ID and not quew:
-        await event.reply(
-            "ahh, Give me some text to say how much chance it have!\nExample `/wish Oreki `"
-        )
-        return
     if e.is_reply:
         mm = random.randint(1, 100)
         lol = await e.get_reply_message()
