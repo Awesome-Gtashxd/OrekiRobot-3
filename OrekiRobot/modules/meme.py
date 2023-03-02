@@ -1,25 +1,35 @@
-import html
-import random
-import time
-
-import requests
-from telegram import ChatPermissions, ParseMode, Update
-from telegram.error import BadRequest
-from telegram.ext import CallbackContext, Filters
-
-import OrekiRobot.modules.helper_funcs.string_store as fun
-from OrekiRobot import OREKI_MOD, SUPPORT_CHAT
+import random 
 from OrekiRobot.events import register
-from OrekiRobot.modules.disable import (
-    DisableAbleCommandHandler,
-    DisableAbleMessageHandler,
+from OrekiRobot import tbot as oreki
+
+Text1 = (
+    "Do you have Lover?", "Which Game You long time played?", "Are you played Game With Big youtuber?", "any girls Seen your dick?",
+    "Any time you shared Your Browing History To Others?",
+    "Are you Changed Tv Channel In Your dad/mother watching TV?", "Do you have any Ex", "Any girl shared her number to you?", "do you like girls?", "Are you Sigma?", "Do you have Any brothers?", "Are you Pokemon fan?", "Doremon best or his devices best", "What Is Your Favourite Cartoon", "If any girls love you are you accept her love?", "What is your Dad income", "Are you Completed college Are Not?", "how many crushes You have", "Any scamer scamed You?", "What type of YouTube videos you like?", "any time you helped poor peoples?",
 )
-from OrekiRobot.modules.helper_funcs.alternate import typing_action
-from OrekiRobot.modules.helper_funcs.chat_status import is_user_admin
-from OrekiRobot.modules.helper_funcs.extraction import extract_user
 
-GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
 
+
+@register(pattern=("/truth"))
+async def awake(event):
+  toon = random.choice(Text)
+  await event.reply(toon)
+  
+  
+import random 
+from Hydra.events import register
+from Hydra import tbot as tot
+
+Text1 = (
+    "Share Your Browsing History to others", "Buy briyani And Show Me", "play minecraft java in your phone", "Give me your Telegram GF ID", "Go to park Propose Any one", "switch off your phone for 10 mins", "Help any Poor peoples", "Go to tea shop Drink tea for free", "give me 1rs", "Join @Toon_LinkZ", "go and exchange your Lover phone", "Just Start me in dm", "go and swim for 30 mins", "Off your Phone And study",
+)
+
+
+
+@register(pattern=("/dare"))
+async def awake(event):
+  linkz = random.choice(Text1)
+  await event.reply(linkz)
 
 @register(pattern="^/truth ?(.*)")
 async def _(td):
