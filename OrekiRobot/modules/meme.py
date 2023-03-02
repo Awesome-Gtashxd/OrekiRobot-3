@@ -36,7 +36,7 @@ async def awake(event):
 
 Text3 = (
     "You Don't Have GF", "You Don't have Dick", "You're Not Boy", "You're Not Girl", "You Like Games",
-    "You Like Me", "You Like Foods much", "You Have Baby",
+    "You Like Me", "You Like Foods much", "You Have Baby", "You Have Own House",
 
 @register(pattern=("/fact"))
 async def :
