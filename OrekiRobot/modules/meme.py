@@ -59,7 +59,7 @@ async def awake(event):
   turn4 = random.choice(Text4)
   await event.reply(turn4)
 
-__mod_name__ = Oreki Fun
+__mod_name__ = "OrekiFun"
 __help__ = """
  🔹 `/truth`*:* Tell the Truth
  🔹 `/dare`*:* Do that
