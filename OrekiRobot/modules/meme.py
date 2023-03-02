@@ -1,6 +1,6 @@
-import random 
+import random
+
 from OrekiRobot.events import register
-from OrekiRobot import tbot as oreki
 
 
 
@@ -15,8 +15,8 @@ Text1 = (
 
 @register(pattern=("/truth"))
 async def awake(event):
-  gtash = random.choice(Text1)
-  await event.reply(gtash)
+  turn1 = random.choice(Text1)
+  await event.reply(turn1)
   
 
 
@@ -30,29 +30,36 @@ Text2 = (
 
 @register(pattern=("/dare"))
 async def awake(event):
-  meow = random.choice(Text2)
-  await event.reply(meow)
+  turn2 = random.choice(Text2)
+  await event.reply(turn2)
+
 
 
 Text3 = (
     "You Don't Have GF", "You Don't have Dick", "You're Not Boy", "You're Not Girl", "You Like Games",
-    "You Like Me", "You Like Foods much", "You Have Baby", "You Have Own House",
+    "You Like Me", "You Like Foods much", "You Have Baby", "You Have Own House", "You Don't Have House",
+    "You Idiot", "You're Crush Hate You",
+)
+
 
 @register(pattern=("/fact"))
-async def :
+async def awake(event):
+  turn3 = random.choice(Text3)
+  await event.reply(turn3)
     
 
-@register(pattern="^/joke ?(.*)")
-async def _(dr):
-    try:
-        resp = requests.get("https://api.safone.tech/joke").json()
-        results = f"{resp['joke']}"
-        return await dr.reply(results)
-    except Exception:
-        await dr.reply(f"Error Report @{SUPPORT_CHAT}")
+Text4 = (
+    "Question: In One Place Big Brother and Small Brother Are there Big Brother saw a Place and Big Brother Only Goes the Place/n Answer: Course That Place Only For Big Brothers",
+)
 
 
+@register(pattern=("/joke"))
+async def awake(event):
+  turn4 = random.choice(Text4)
+  await event.reply(turn4)
 
+Text5 = (
+    "
 @register(pattern="^/advice ?(.*)")
 async def _(dr):
     try:
