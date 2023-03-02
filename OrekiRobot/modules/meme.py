@@ -3,17 +3,18 @@ from OrekiRobot.events import register
 from OrekiRobot import tbot as oreki
 
 Text1 = (
-    "Do you have Lover?", "Which Game You long time played?", "Are you played Game With Big youtuber?", "any girls Seen your dick?",
+    "Do you have Lover?", "Which Game You long time played?", "Are you played Game With Big youtuber?", "Any girls Seen your dick?",
     "Any time you shared Your Browing History To Others?",
-    "Are you Changed Tv Channel In Your dad/mother watching TV?", "Do you have any Ex", "Any girl shared her number to you?", "do you like girls?", "Are you Sigma?", "Do you have Any brothers?", "Are you Pokemon fan?", "Doremon best or his devices best", "What Is Your Favourite Cartoon", "If any girls love you are you accept her love?", "What is your Dad income", "Are you Completed college Are Not?", "how many crushes You have", "Any scamer scamed You?", "What type of YouTube videos you like?", "any time you helped poor peoples?",
+    "Are you Changed Tv Channel In Your dad/mother watching TV?", "Do you have any Ex?", "Any girl shared her number to you?", "Do you like girls?", "Are you Sigma?", "Do you have Any brothers?", "Are you Pokemon fan?", "Doremon best or his devices best?", "What Is Your Favourite Anime?", "If any girls love you are you accept her love?", "What is your Dad income?", "Are you Completed college Are Not?", "How many crushes You have?", "Any scamer scamed You?", "What type of YouTube videos you like?", "Any time you helped poor peoples?",
+    "You Know Python?", "You Like Me?",
 )
 
 
 
-@register(pattern=("/truth"))
+@register(pattern=("^/truth"))
 async def awake(event):
-  toon = random.choice(Text)
-  await event.reply(toon)
+  oreki = random.choice(Text)
+  await event.reply(oreki)
   
   
 import random 
