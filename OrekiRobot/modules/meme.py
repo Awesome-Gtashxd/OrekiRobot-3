@@ -48,6 +48,7 @@ async def awake(event):
   await event.reply(turn3)
     
 
+
 Text4 = (
     "Question: In One Place Big Brother and Small Brother Are there Big Brother saw a Place and Big Brother Only Goes the Place/n Answer: Course That Place Only For Big Brothers",
 )
@@ -58,22 +59,10 @@ async def awake(event):
   turn4 = random.choice(Text4)
   await event.reply(turn4)
 
-Text5 = (
-    "
-@register(pattern="^/advice ?(.*)")
-async def _(dr):
-    try:
-        resp = requests.get("https://api.safone.tech/advice").json()
-        results = f"{resp['advice']}"
-        return await dr.reply(results)
-    except Exception:
-        await dr.reply(f"Error Report @{SUPPORT_CHAT}")
-
-
+__mod_name__ = Oreki Fun
 __help__ = """
  🔹 `/truth`*:* Tell the Truth
  🔹 `/dare`*:* Do that
  🔹 `/fact`*:* Some Real
  🔹 `/joke`*:* Some Jokes you like that
- 🔹 `/advice`*:* Some advices for you
 """
