@@ -50,8 +50,7 @@ async def awake(event):
 
 
 Text4 = (
-    "Question: In One Place Big Brother and Small Brother Are there Big Brother saw a Place and Big Brother Only Goes the Place
-     Answer: Course That Place Only For Big Brothers",
+    "Question: In One Place Big Brother and Small Brother Are there Big Brother saw a Place and Big Brother Only Goes the Place Answer: Course That Place Only For Big Brothers",
 )
 
 
