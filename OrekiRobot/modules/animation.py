@@ -25,24 +25,10 @@ EDIT_SLEEP = 1
 # edit how many times in 'hack'
 EDIT_TIMES = 10
 
-
-# sleep how many times after each edit in 'earthanimation'
-EDIT_SLEEP = 1
-# edit how many times in 'earthanimation'
-EDIT_TIMES = 18
-
-
 # sleep how many times after each edit in 'moonanimation'
 EDIT_SLEEP = 1
 # edit how many times in 'moonanimation'
 EDIT_TIMES = 32
-
-
-# sleep how many times after each edit in 'clockanimation'
-EDIT_SLEEP = 1
-# edit how many times in 'clockanimation'
-EDIT_TIMES = 11
-
 
 # sleep how many times after each edit in 'blockanimation'
 EDIT_SLEEP = 1
