@@ -52,3 +52,7 @@ F4_CAP = """
 """
 
 await oreki.send_file(event.chat_id, file4, caption=F4_CAP)
+
+MOVIE_HANDLER = CommandHandler("movies", movies, run_async=True)
+
+OREKI_MOD.add_Handler(MOVIE_HANDLER)
