@@ -1,12 +1,10 @@
 import os
-
 import requests
-from faker import Faker
+import Faker
+
 from faker.providers import internet
-from telethon import events
 
 from OrekiRobot.utils.pluginhelpers import is_admin
-from OrekiRobot import SUPPORT_CHAT
 from OrekiRobot import tbot as oreki
 
 @oreki.on(events.NewMessage(pattern="/fakegen$"))
@@ -34,21 +32,3 @@ async def hi(event):
         f"<b><u> Fake Information Generated</b></u>\n<b>Name :-</b><code>{name}</code>\n\n<b>Address:-</b><code>{address}</code>\n\n<b>IP ADDRESS:-</b><code>{ip}</code>\n\n<b>credit card:-</b><code>{cc}</code>\n\n<b>Email Id:-</b><code>{email}</code>\n\n<b>Job:-</b><code>{job}</code>\n\n<b>android user agent:-</b><code>{android}</code>\n\n<b>Pc user agent:-</b><code>{pc}</code>",
         parse_mode="HTML",
     )
-
-
-@oreki.on(events.NewMessage(pattern="/picgen$"))
-async def _(event):
-    if event.fwd_from:
-        return
-    if await is_admin(event, event.message.sender_id):
-        url = "https://thispersondoesnotexist.com/image"
-        response = requests.get(url)
-        if response.status_code == 200:
-            with open("FRIDAYOT.jpg", "wb") as f:
-                f.write(response.content)
-
-        fakepunda = f"Fake Image powered by @{SUPPORT_CHAT}."
-        fole = "FRIDAYOT.jpg"
-        await oreki.send_file(event.chat_id, fole, caption=fakepunda)
-        await event.delete()
-        os.system("rm ./oreki_picgen.jpg ")
