@@ -9,11 +9,11 @@ from OrekiRobot import tbot as oreki
 async def _(event):
     reply = await event.get_reply_message()
     if not (reply and(reply.media)):
-           await event.reply("`Please reply to a sticker`")
+           await event.reply("`Please reply to a sticker ⚠️`")
            return
-    kontol = await event.reply("`Processing tiny...`")
+    kontol = await event.reply("`Processing tiny...⚡`")
     ik = await tbot.download_media(reply)
-    im1 = Image.open("MikuXProBot/resources/ken.png")
+    im1 = Image.open("OrekiRobot/resources/ken.png")
     if ik.endswith(".tgs"):
         await tbot.download_media(reply, "ken.tgs")
         os.system("lottie_convert.py ken.tgs json.json")
