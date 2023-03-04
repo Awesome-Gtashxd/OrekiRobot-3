@@ -12,10 +12,10 @@ async def _(event):
            await event.reply("`Please reply to a sticker ⚠️`")
            return
     kontol = await event.reply("`Processing tiny...⚡`")
-    ik = await tbot.download_media(reply)
+    ik = await oreki.download_media(reply)
     im1 = Image.open("OrekiRobot/resources/ken.png")
     if ik.endswith(".tgs"):
-        await tbot.download_media(reply, "ken.tgs")
+        await oreki.download_media(reply, "ken.tgs")
         os.system("lottie_convert.py ken.tgs json.json")
         json = open("json.json", "r")
         jsn = json.read()
@@ -71,7 +71,7 @@ async def _(event):
         back_im.save("o.webp", "WEBP", quality=95)
         file = "o.webp"
         os.remove("k.png")
-    await tbot.send_file(event.chat_id, file, reply_to=event.reply_to_msg_id)
+    await oreki.send_file(event.chat_id, file, reply_to=event.reply_to_msg_id)
     await kontol.delete()
     os.remove(file)
     os.remove(ik)
