@@ -54,7 +54,7 @@ kill_animate = [
     "------------------>",
     "------>;(^。^)ノ",
     "(￣ー￣) DED",
-    "**Target killed successfully",
+    "**Target killed successfully**",
 ]
 
 
@@ -95,11 +95,27 @@ love_animate = [
 
 hack_animate = [
     "Looking for WhatsApp databases in targeted person..",
+    "User online: True\nWhatsApp access: True\nRead Storage: True",
+    "Hacking... 20.63%\n[███░░░░░░░░░░░░░░░░░]",
+    "Hacking... 86.21%\n[███████████████░░░░░]",
+    "Hacking... 93.50%\n[█████████████████░░░]",
+    "Hacking....  100%\n[████████████████████]",
+    "Success!!",
+    "Looking for YouTube databases in targeted person..",
+    "User online: True\nYouTube access: True\nRead Storage: True",
+    "Hacking... 20.63%\n[███░░░░░░░░░░░░░░░░░]",
+    "Hacking... 86.21%\n[███████████████░░░░░]",
+    "Hacking... 93.50%\n[█████████████████░░░]",
+    "Hacking....  100%\n[████████████████████]",
+    "Success!!",
+    "Looking for Telegram databases in targeted person..",
     "User online: True\nTelegram access: True\nRead Storage: True",
     "Hacking... 20.63%\n[███░░░░░░░░░░░░░░░░░]",
     "Hacking... 86.21%\n[███████████████░░░░░]",
     "Hacking... 93.50%\n[█████████████████░░░]",
-    "hacking....  100%\n[████████████████████]",
+    "Hacking....  100%\n[████████████████████]",
+    "Success!!",
+    "Now Checking Again!",
 ]
 
 
@@ -210,11 +226,11 @@ def bombs(update: Update, context: CallbackContext):
 @user_admin
 def hack(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
-    msg = update.effective_message.reply_text("Target selected")
+    msg = update.effective_message.reply_text("Target selected!")
     for x in range(EDIT_TIMES):
         msg.edit_text(hack_animate[x % 5])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text("successful hacked all data send on my Database")
+    msg.edit_text("Successful Hacked!!!")
 
 
 @user_admin
@@ -224,7 +240,7 @@ def love(update: Update, context: CallbackContext):
     for x in range(EDIT_TIMES):
         msg.edit_text(love_animate[x % 5])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text("True Love💞")
+    msg.edit_text("I Accepts your Love❤")
 
 
 @user_admin
