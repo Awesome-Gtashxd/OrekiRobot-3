@@ -1,7 +1,7 @@
 import os
 import requests
-import Faker
 
+from faker import Faker
 from faker.providers import internet
 
 from OrekiRobot.utils.pluginhelpers import is_admin
