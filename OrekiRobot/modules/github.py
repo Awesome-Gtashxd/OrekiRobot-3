@@ -30,17 +30,16 @@ async def github(_, message):
                 repositories = result["public_repos"]
                 followers = result["followers"]
                 following = result["following"]
-                github = f"""**Info Of {name}**
-**Username:** `{username}`
-**Bio:** `{bio}`
-**Profile Link:** [Here]({url})
-**Company:** `{company}`
-**Created On:** `{created_at}`
-**Repositories:** `{repositories}`
-**Blog:** `{blog}`
-**Location:** `{location}`
-**Followers:** `{followers}`
-**Following:** `{following}`"""
+                github = f"""
+Info Of {name}
+Username ~ {username}
+Bio ~ {bio}
+Username ~ [Here]({url})
+Company ~ {company}
+Repositories ~ {repositories}
+Location ~ {location}
+Followers ~ {followers}
+"""
             except Exception as e:
                 print(str(e))
                 pass
