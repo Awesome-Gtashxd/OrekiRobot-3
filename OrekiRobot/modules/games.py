@@ -22,16 +22,7 @@ def truth(update: Update, context: CallbackContext):
 def dare(update: Update, context: CallbackContext):
     update.effective_message.reply_text(random.choice(game_strings.DARE_STRINGS))
 
-
-@run_async
-def tord(update: Update, context: CallbackContext):
-    update.effective_message.reply_text(random.choice(game_strings.TORD_STRINGS))
-
-@run_async
-def wyr(update: Update, context: CallbackContext):
-    update.effective_message.reply_text(random.choice(game_strings.WYR_STRINGS))
-
-
+    
 __help__ = """
  • `/truth`*:* asks you a question
  • `/dare`*:* gives you a dare
