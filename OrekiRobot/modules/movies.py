@@ -14,4 +14,4 @@ from OrekiRobot.modules.helper_funcs.extraction import extract_user
 
 @run_async
 def thunivu(update: Update, context: CallbackContext):
-    update.effective_message.reply_text(movie_strings.THUNIVU_STRINGS))
+    update.effective_message.reply_text(movie_strings.THUNIVU_STRINGS)
