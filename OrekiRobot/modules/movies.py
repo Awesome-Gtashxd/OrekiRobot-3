@@ -6,7 +6,7 @@ from telegram import ParseMode, Update, ChatPermissions
 from telegram.ext import CallbackContext, run_async
 from telegram.error import BadRequest
 
-import OrekiRobot.modules.movies.movie_strings.py as movie_strings
+import OrekiRobot.modules.movie_strings as movie_strings
 from OrekiRobot.modules.helper_funcs.chat_status import (is_user_admin)
 from OrekiRobot.modules.helper_funcs.extraction import extract_user
 
