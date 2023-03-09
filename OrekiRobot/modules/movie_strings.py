@@ -6,17 +6,17 @@ POSTER = "https://t.me/OrekiMovies/7"
 
 @register(pattern=("Thunivu"))
 async def awake(event):
-         POSTER_CAP = """
-THUNIVU
+    CAPTION = """
+ THUNIVU
 
-➤ Year : 2023
-➤ Lang : Tamil
-➤ Quality : HDRip
-➤ Size : 250MB-1.4GB
+Year : 2023
+Language : Tamil
+Quality : HDRip
+Size : 250MB-1.4GB
 
-𖦹 Powered By : @Gtash_Association
+Powered By : @Gtash_Association
 """
-await oreki.send_file(event.chat_id, POSTER, caption=POSTER_CAP)
+await oreki.send_file(event.chat_id, POSTER, caption=CAPTION)
 
 file1 = "https://t.me/OrekiMovies/8"
 
