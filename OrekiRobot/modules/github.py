@@ -19,17 +19,14 @@ async def github(_, message):
 
             result = await request.json()
             try:
-                url = result["html_url"]
                 name = result["name"]
                 company = result["company"]
                 bio = result["bio"]
                 created_at = result["created_at"]
                 avatar_url = result["avatar_url"]
-                blog = result["blog"]
                 location = result["location"]
                 repositories = result["public_repos"]
                 followers = result["followers"]
-                following = result["following"]
                 github = f"""
 Info Of {name}
 Username ~ {username}
