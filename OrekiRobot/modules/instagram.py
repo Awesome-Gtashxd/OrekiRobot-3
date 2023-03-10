@@ -4,7 +4,7 @@ from OrekiRobot import pgram
 from OrekiRobot.utils.errors import capture_err
 
 
-@pgram.on_message(filters.command(["instagram"]))
+@pgram.on_message(filters.command(["instagram", "insta", f"insta@OrekiRobot"]))
 @capture_err
 async def instagram(_, message):
     if len(message.command) != 2:
