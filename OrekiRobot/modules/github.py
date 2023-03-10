@@ -34,7 +34,6 @@ async def github(_, message):
 Info Of {name}
 Username ~ {username}
 Bio ~ {bio}
-Username ~ [Here]({url})
 Company ~ {company}
 Repositories ~ {repositories}
 Location ~ {location}
