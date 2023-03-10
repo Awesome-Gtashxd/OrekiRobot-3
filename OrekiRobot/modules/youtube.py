@@ -4,14 +4,14 @@ from OrekiRobot import pgram
 from OrekiRobot.utils.errors import capture_err
 
 
-@pgram.on_message(filters.command(["instagram", "insta", f"insta@OrekiRobot"]))
+@pgram.on_message(filters.command(["youtube", "yt", f"yt@OrekiRobot"]))
 @capture_err
 async def instagram(_, message):
     if len(message.command) != 2:
-        await message.reply_text("/insta Username")
+        await message.reply_text("/yt Username")
         return
     username = message.text.split(None, 1)[1]
-    URL = f"https://api.instagram.com/users/{username}"
+    URL = f"https://api.youtube.com/users/{username}"
     async with aiohttp.ClientSession() as session:
         async with session.get(URL) as request:
             if request.status == 404:
