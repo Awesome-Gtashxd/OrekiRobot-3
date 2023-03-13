@@ -236,13 +236,13 @@ print(
     "[OrekiRobot] Iam here! Successfully Connected with Gtash Network • Data Center • Coimbatore"
 )
 print(
-    "[OrekiRobot] Project Maintained By: github.com/Awesome-Gtash (https://github.com/Awesome-Gtashxd/OrekiRobot-3)"
+    "[OrekiRobot] Project Maintained By: github.com/Awesome-Gtashxd (https://github.com/Awesome-Gtashxd/OrekiRobot-3)"
 )
 
 print("[OrekiRobot]: Telegraph Installing")
 telegraph = Telegraph()
 print("[OrekiRobot]: Telegraph Account Creating")
-telegraph.create_account(short_name="Neko")
+telegraph.create_account(short_name="Oreki")
 updater = tg.Updater(
     token=TOKEN,
     workers=WORKERS,
