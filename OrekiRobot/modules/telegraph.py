@@ -55,7 +55,7 @@ async def telegrap(event):
                 )
 
         elif input_str == "gt":
-            user_object = await tbot.get_entity(reply_msg.sender_id)
+            user_object = await oreki.get_entity(reply_msg.sender_id)
             title_of_page = user_object.first_name  # + " " + user_object.last_name
             # apparently, all Users do not have last_name field
             if optional_title:
