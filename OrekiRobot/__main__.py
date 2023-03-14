@@ -92,7 +92,7 @@ OREKI_STICKERS = (
 )
 
 PM_START_TEXT = """
-────「 [{}](https://te.legra.ph/file/9b747e295b8f8288ebe5c.jpg) 」────
+────「 [{}](https://telegra.ph/file/3b1c6afb8b8a3c3a8684c.jpg) 」────
 *Hey Prince Is Here! {},*
 *I am an Anime Themed Advance Group Management Bot With Lot Of Cool Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
