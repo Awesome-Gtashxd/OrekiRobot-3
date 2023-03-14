@@ -661,11 +661,11 @@ def donate(update: Update, context: CallbackContext) -> None:
                         [
                             InlineKeyboardButton(
                                 text="📢 Updates",
-                                url="https://telegram.dog/Dev_Updates",
+                                url="https://telegram.dog/Gtash_Updates",
                             ),
                             InlineKeyboardButton(
                                 text="🚑 Support",
-                                url=f"https://telegram.dog/Dev_SupportChat",
+                                url=f"https://telegram.dog/Gtash_Association",
                             ),
                         ]
                     ]
