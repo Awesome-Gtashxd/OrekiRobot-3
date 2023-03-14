@@ -242,7 +242,7 @@ print(
 print("[OrekiRobot]: Telegraph Installing")
 telegraph = Telegraph()
 print("[OrekiRobot]: Telegraph Account Creating")
-telegraph.create_account(short_name="Oreki")
+telegraph.create_account(short_name="OrekiRobot")
 updater = tg.Updater(
     token=TOKEN,
     workers=WORKERS,
