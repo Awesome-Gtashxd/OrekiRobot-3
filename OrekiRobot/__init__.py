@@ -276,7 +276,7 @@ arq = ARQ("https://thearq.tech", "YIECCC-NAJARO-OLLREW-SJSRIP-ARQ", aiohttpsessi
 print(
     "[OrekiRobot]: Connecting To Gtash Network • Data Center • Coimbatore • PostgreSQL Database"
 )
-ubot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
+ubot = TelegramClient(StringSession(STRING_SESSION, API_ID, API_HASH))
 print(
     "[OrekiRobot]: Connecting To Gtash Network • Oreki Userbot (https://telegram.dog/Oreki_Assistant)"
 )
