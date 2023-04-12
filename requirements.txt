@@ -1,5 +1,6 @@
 future
 yt_dlp
+pygame
 envparse==0.2.0
 multicolorcaptcha
 faker
