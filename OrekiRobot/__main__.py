@@ -274,7 +274,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_animation(GROUP_START_IMG),
-            caption=f"<b>𝐇eyoo, {first}, 𝐈 𝐚m 𝐎reki, 𝐓he 𝐏rince💕../n➖➖➖➖➖➖➖➖➖➖➖➖➖/n• I am a anime themed bot i can help you to Manage ur all groups../n<b>• I am a Prince in my World/n➖➖➖➖➖➖➖➖➖➖➖➖➖/n𝐖anna 𝐊now 𝐌y 𝐂ommands? 𝐇it /help",
+            caption=f"<b>𝐇eyoo, {first}, 𝐈 𝐚m 𝐎reki, 𝐓he 𝐏rince💕../n➖➖➖➖➖➖➖➖➖➖➖➖➖/n• I am a anime themed bot i can help you to Manage ur all groups../n• I am a Prince in my World/n➖➖➖➖➖➖➖➖➖➖➖➖➖/n𝐖anna 𝐊now 𝐌y 𝐂ommands? 𝐇it /help<b>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
