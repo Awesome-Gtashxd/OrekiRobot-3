@@ -99,10 +99,10 @@ PM_START_TEXT = """
 ❍ *Uptime ~* `{}`
 ❍ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Latest Update ~* 2/26/23
+❍ *Latest Update ~* Version 3
 ❍ *Version Name ~* Pro Version
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Next Version Update ~* 4/14/23
+❍ *Next Version Update ~* Version 4
 ❍ *Next Version Name ~* Ultimate Version
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➪ Hit The *Help* Button Below To Know My Powers ××
@@ -122,9 +122,6 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(
-            text="📢 Updates", url=f"https://telegram.dog/Gtash_Updates"
-        ),
         InlineKeyboardButton(
             text="My Master 💌", url=f"https://telegram.dog/Awesome_Gtashxd"
         ),
