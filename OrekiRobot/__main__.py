@@ -80,7 +80,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 HELP_MSG = "Click The Button Below To Get Help Menu In Your Dm."
-START_MSG = "Hola, I'm awake already!\n<b>Haven't sleep since:</b> <code>{}</code>"
+START_MSG = "𝐇eyoo, {first}, 𝐈 𝐚m 𝐎reki, 𝐓he 𝐏rince💕../n➖➖➖➖➖➖➖➖➖➖➖➖➖/n• I am a anime themed bot i can help you to Manage ur all groups../n<b>• I am a Prince in my World/n➖➖➖➖➖➖➖➖➖➖➖➖➖/n𝐖anna 𝐊now 𝐌y 𝐂ommands? 𝐇it /help"
 
 OREKI_STICKERS = (
     "CAACAgQAAx0CXn_ThAACDM5j9IyGH8BGp8qDTTnv35zHWvZJcgAC2AoAApkBwVDFFzmCmWTH7y4E",
@@ -141,13 +141,7 @@ I Help Admins To Manage Their Groups!
 """
 
 GROUP_START_IMG = (
-    "https://te.legra.ph/file/127c38bcb4b2cf3e32f0d.mp4",
-    "https://te.legra.ph/file/09be7cbf3996e415340db.mp4",
-    "https://te.legra.ph/file/16c5f5d294c64a76982d5.mp4",
-    "https://te.legra.ph/file/6793f1cf62bdccd56831c.mp4",
-    "https://te.legra.ph/file/25a73c01644446b0abe0c.mp4",
-    "https://te.legra.ph/file/b6f0113dbc64d867238b0.mp4",
-
+    "https://telegra.ph/file/6c0e586b71e73cdbbccd5.jpg",
 )
 
 DONATE_STRING = """❂ I'm Free for Everyone ❂"""
@@ -279,21 +273,22 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_animation(
-            random.choice(GROUP_START_IMG),
-            caption=f"<b>Hola, I'm awake already!\nHaven't sleep since</b>: <code>{uptime}</code>",
+        update.effective_message.reply_animation(GROUP_START_IMG),
+            caption=f"<b>𝐇eyoo, {first}, 𝐈 𝐚m 𝐎reki, 𝐓he 𝐏rince💕../n➖➖➖➖➖➖➖➖➖➖➖➖➖/n• I am a anime themed bot i can help you to Manage ur all groups../n<b>• I am a Prince in my World/n➖➖➖➖➖➖➖➖➖➖➖➖➖/n𝐖anna 𝐊now 𝐌y 𝐂ommands? 𝐇it /help",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(
-                            text="🚑 Support",
-                            url=f"https://telegram.dog/Gtash_Association",
-                        ),
-                        InlineKeyboardButton(
-                            text="📢 Updates",
-                            url="https://telegram.dog/Gtash_Updates",
-                        ),
+        InlineKeyboardButton(
+            text=f"Add Me To Your Group",
+            url=f"https://telegram.dog/{BOT_USERNAME}?startgroup=true",
+        )
+    ],
+    [
+        InlineKeyboardButton(text="🎗️ Help", callback_data="help_back"),
+        InlineKeyboardButton(
+            text="🚑 Support", url=f"https://telegram.dog/Gtash_Association"
+        ),
                     ]
                 ]
             ),
