@@ -80,7 +80,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 HELP_MSG = "Click The Button Below To Get Help Menu In Your Dm."
-START_MSG = "I'm Alive!\n<b>Not Slept Since:</b> <code>{}</code>"
+START_MSG = "<b>I'm Alive!\n<b>Not Slept Since:</b> <code>{}</code>"
 
 OREKI_STICKERS = (
     "CAACAgQAAx0CXn_ThAACDM5j9IyGH8BGp8qDTTnv35zHWvZJcgAC2AoAApkBwVDFFzmCmWTH7y4E",
@@ -99,11 +99,8 @@ PM_START_TEXT = """
 ❍ *Uptime ~* `{}`
 ❍ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Latest Update ~* Version 3
+❍ *Latest Version ~* Version 3
 ❍ *Version Name ~* Pro Version
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Next Version Update ~* Version 4
-❍ *Next Version Name ~* Ultimate Version
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➪ Hit The *Help* Button Below To Know My Powers ××
 """
@@ -274,7 +271,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_animation(GROUP_START_IMG),
-            caption="I'm Alive!\n<b>Not Slept Since:</b> <code>{uptime}</code>",
+            caption="<b>I'm Alive!\n<b>Not Slept Since:</b> <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
