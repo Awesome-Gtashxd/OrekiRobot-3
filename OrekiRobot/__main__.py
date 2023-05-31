@@ -271,26 +271,21 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_animation(GROUP_START_IMG),
-            caption=f"<b>Hey, I'm alive!\nNot sleep since</b>: <code>{uptime}</code>",
+            caption=f"<b>Hey, I'm alive!\nHaven't sleep since</b>: <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-        InlineKeyboardButton(
-            text=f"Add Me To Your Group",
-            url=f"https://telegram.dog/{BOT_USERNAME}?startgroup=true",
-        )
-    ],
-    [
-        InlineKeyboardButton(text="🎗️ Help", callback_data="help_back"),
-        InlineKeyboardButton(
-            text="🚑 Support", url=f"https://telegram.dog/Gtash_Association"
-        ),
+                        InlineKeyboardButton(
+                            text="🚑 Support",
+                            url=f"https://telegram.dog/Gtash_Association",
+                        ),
+                        InlineKeyboardButton(text="💙Help", callback_data="help_back",
+                        ),
                     ]
                 ]
             ),
         )
-
 
 def error_handler(update: Update, context: CallbackContext):
     """Log the error and send a telegram message to notify the developer."""
