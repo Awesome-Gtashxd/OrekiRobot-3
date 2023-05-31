@@ -141,7 +141,7 @@ I Help Admins To Manage Their Groups!
 """
 
 GROUP_START_IMG = (
-    "https://telegra.ph/file/6c0e586b71e73cdbbccd5.jpg",
+    "https://telegra.ph/file/72cd1983bd254966d738e.mp4",
 )
 
 DONATE_STRING = """❂ I'm Free for Everyone ❂"""
