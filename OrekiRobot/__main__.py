@@ -80,7 +80,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 HELP_MSG = "Click The Button Below To Get Help Menu In Your Dm."
-START_MSG = "𝐇eyoo, {first}, 𝐈 𝐚m 𝐎reki, 𝐓he 𝐏rince💕../n➖➖➖➖➖➖➖➖➖➖➖➖➖/n• I am a anime themed bot i can help you to Manage ur all groups../n• I am a Prince in my World/n➖➖➖➖➖➖➖➖➖➖➖➖➖/n𝐖anna 𝐊now 𝐌y 𝐂ommands? 𝐇it /help"
+START_MSG = "I'm Alive!\n<b>Not Slept Since:</b> <code>{}</code>"
 
 OREKI_STICKERS = (
     "CAACAgQAAx0CXn_ThAACDM5j9IyGH8BGp8qDTTnv35zHWvZJcgAC2AoAApkBwVDFFzmCmWTH7y4E",
@@ -274,7 +274,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_animation(GROUP_START_IMG),
-            caption="𝐇eyoo, {first}, 𝐈 𝐚m 𝐎reki, 𝐓he 𝐏rince💕./n• I am a anime themed bot i can help you/nto Manage ur all groups../n• I am a Prince in my World/n𝐖anna 𝐊now 𝐌y 𝐂ommands? 𝐇it /help",
+            caption="I'm Alive!\n<b>Not Slept Since:</b> <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
