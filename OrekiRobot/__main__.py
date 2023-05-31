@@ -271,7 +271,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_animation(GROUP_START_IMG),
-            caption="<b>I'm Alive!\n<b>Not Slept Since:</b> <code>{uptime}</code>",
+            caption=f"<b>I'm Alive!\n<b>Not sleep since:</b> <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
