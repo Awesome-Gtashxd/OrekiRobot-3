@@ -23,17 +23,7 @@ EDIT_TIMES = 9
 # sleep how many times after each edit in 'hack'
 EDIT_SLEEP = 1
 # edit how many times in 'hack'
-EDIT_TIMES = 10
-
-# sleep how many times after each edit in 'moonanimation'
-EDIT_SLEEP = 1
-# edit how many times in 'moonanimation'
-EDIT_TIMES = 32
-
-# sleep how many times after each edit in 'blockanimation'
-EDIT_SLEEP = 1
-# edit how many times in 'blockanimation'
-EDIT_TIMES = 18
+EDIT_TIMES = 20
 
 
 # sleep how many times after each edit in 'kill'
@@ -55,28 +45,6 @@ kill_animate = [
     "------>;(^。^)ノ",
     "(￣ー￣) DED",
     "**Target killed successfully**",
-]
-
-
-block_animate = [
-    "🟥",
-    "🟧",
-    "🟨",
-    "🟩",
-    "🟦",
-    "🟪",
-    "🟫",
-    "⬛",
-    "⬜",
-    "🟥",
-    "🟧",
-    "🟨",
-    "🟩",
-    "🟦",
-    "🟪",
-    "🟫",
-    "⬛",
-    "⬜",
 ]
 
 
@@ -114,8 +82,6 @@ hack_animate = [
     "Hacking... 86.21%\n[███████████████░░░░░]",
     "Hacking... 93.50%\n[█████████████████░░░]",
     "Hacking....  100%\n[████████████████████]",
-    "Success!!",
-    "Now Checking Again!",
 ]
 
 
@@ -130,87 +96,6 @@ bomb_animate = [
     "▪️▪️▪️▪️\n▪️▪️▪️▪️\n▪️▪️▪️▪️\n💥💥💥💥\n💥💥💥💥",
     "▪️▪️▪️▪️\n▪️▪️▪️▪️\n▪️▪️▪️▪️\n▪️▪️▪️▪️\n😵😵😵😵",
 ]
-
-
-moon_animate = [
-    "🌗",
-    "🌘",
-    "🌑",
-    "🌒",
-    "🌓",
-    "🌔",
-    "🌕",
-    "🌖",
-    "🌗",
-    "🌘",
-    "🌑",
-    "🌒",
-    "🌓",
-    "🌔",
-    "🌕",
-    "🌖",
-    "🌗",
-    "🌘",
-    "🌑",
-    "🌒",
-    "🌓",
-    "🌔",
-    "🌕",
-    "🌖",
-    "🌗",
-    "🌘",
-    "🌑",
-    "🌒",
-    "🌓",
-    "🌔",
-    "🌕",
-    "🌖",
-]
-
-
-clock_animate = ["🕙", "🕘", "🕗", "🕖", "🕕", "🕔", "🕓", "🕒", "🕑", "🕐", "🕛"]
-
-
-earth_animate = [
-    "🌍",
-    "🌎",
-    "🌏",
-    "🌍",
-    "🌎",
-    "🌏",
-    "🌍",
-    "🌎",
-    "🌏",
-    "🌍",
-    "🌎",
-    "🌏",
-    "🌍",
-    "🌎",
-    "🌏",
-    "🌍",
-    "🌎",
-    "🌏",
-]
-
-
-@user_admin
-def blockanimation(update: Update, context: CallbackContext):
-    bot, args = context.bot, context.args
-    msg = update.effective_message.reply_text("⬜")
-    for x in range(EDIT_TIMES):
-        msg.edit_text(block_animate[x % 18])
-        time.sleep(EDIT_SLEEP)
-    msg.edit_text("🟥")
-
-
-@user_admin
-def moonanimation(update: Update, context: CallbackContext):
-    bot, args = context.bot, context.args
-    msg = update.effective_message.reply_text("🌚")
-    for x in range(EDIT_TIMES):
-        msg.edit_text(moon_animate[x % 32])
-        time.sleep(EDIT_SLEEP)
-    msg.edit_text("🌙")
 
 
 @user_admin
@@ -258,31 +143,21 @@ KILL_HANDLER = DisableAbleCommandHandler("kill", kill, run_async=True)
 LOVE_HANDLER = DisableAbleCommandHandler("love", love, run_async=True)
 HACK_HANDLER = DisableAbleCommandHandler("hack", hack, run_async=True)
 BOMBS_HANDLER = DisableAbleCommandHandler("bombs", bombs, run_async=True)
-MOONANIMATION_HANDLER = DisableAbleCommandHandler("moon", moonanimation, run_async=True)
-BLOCKANIMATION_HANDLER = DisableAbleCommandHandler(
-    "block", blockanimation, run_async=True
-)
 OREKI_MOD.add_handler(KILL_HANDLER)
 OREKI_MOD.add_handler(LOVE_HANDLER)
 OREKI_MOD.add_handler(HACK_HANDLER)
 OREKI_MOD.add_handler(BOMBS_HANDLER)
-OREKI_MOD.add_handler(MOONANIMATION_HANDLER)
-OREKI_MOD.add_handler(BLOCKANIMATION_HANDLER)
 
 __mod_name__ = "Animation"
 __command_list__ = [
     "love",
     "hack",
     "bombs",
-    "moonanimation",
-    "blockanimation",
     "kill",
 ]
 __handlers__ = [
     LOVE_HANDLER,
     HACK_HANDLER,
     BOMBS_HANDLER,
-    MOONANIMATION_HANDLER,
-    BLOCKANIMATION_HANDLER,
     KILL_HANDLER,
 ]
