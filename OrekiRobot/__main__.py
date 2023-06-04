@@ -138,7 +138,8 @@ I Help Admins To Manage Their Groups!
 """
 
 GROUP_START_IMG = (
-    "https://telegra.ph/file/72cd1983bd254966d738e.mp4",
+    "https://telegra.ph/file/72cd1983bd254966d738e.mp4"
+    "https://telegra.ph/file/c9e47d0c29898b6e58fd0.mp4",
 )
 
 DONATE_STRING = """❂ I'm Free for Everyone ❂"""
@@ -270,7 +271,8 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_animation(GROUP_START_IMG),
+        update.effective_message.reply_animation(
+            random.choice(GROUP_START_IMG),
             caption=f"<b>Hey, I'm alive!\nHaven't sleep since</b>: <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
