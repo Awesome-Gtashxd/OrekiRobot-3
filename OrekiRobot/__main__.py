@@ -280,7 +280,9 @@ def start(update: Update, context: CallbackContext):
                             text="🚑 Support",
                             url=f"https://telegram.dog/Gtash_Association",
                         ),
-                        InlineKeyboardButton(text="💙Help", callback_data="help_back",
+                        InlineKeyboardButton(
+                            text="📢 Updates",
+                            url="https://telegram.dog/Gtash_Updates",
                         ),
                     ]
                 ]
