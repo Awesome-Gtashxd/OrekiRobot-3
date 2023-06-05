@@ -80,7 +80,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 HELP_MSG = "Click The Button Below To Get Help Menu In Your Dm."
-START_MSG = "<b>I'm Alive!\n<b>Not Slept Since:</b> <code>{}</code>"
+START_MSG = "<b>Hey, I'm alive!\nHaven't sleep since</b>: <code>{uptime}</code>"
 
 OREKI_STICKERS = (
     "CAACAgQAAx0CXn_ThAACDM5j9IyGH8BGp8qDTTnv35zHWvZJcgAC2AoAApkBwVDFFzmCmWTH7y4E",
@@ -138,7 +138,7 @@ I Help Admins To Manage Their Groups!
 """
 
 GROUP_START_IMG = (
-    "https://telegra.ph/file/72cd1983bd254966d738e.mp4"
+    "https://telegra.ph/file/72cd1983bd254966d738e.mp4",
     "https://telegra.ph/file/c9e47d0c29898b6e58fd0.mp4",
 )
 
