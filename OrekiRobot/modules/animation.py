@@ -113,7 +113,7 @@ def hack(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
     msg = update.effective_message.reply_text("Target selected!")
     for x in range(EDIT_TIMES):
-        msg.edit_text(hack_animate[x % 5])
+        msg.edit_text(hack_animate[x % 20])
         time.sleep(EDIT_SLEEP)
     msg.edit_text("Successful Hacked!!!")
 
@@ -123,7 +123,7 @@ def love(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
     msg = update.effective_message.reply_text("❣️")
     for x in range(EDIT_TIMES):
-        msg.edit_text(love_animate[x % 5])
+        msg.edit_text(love_animate[x % 9])
         time.sleep(EDIT_SLEEP)
     msg.edit_text("I Accepts your Love❤")
 
