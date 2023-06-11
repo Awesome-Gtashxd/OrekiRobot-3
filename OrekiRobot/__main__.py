@@ -804,7 +804,7 @@ OREKI_START = f"""
 """
 INLINE_BUTTON = [
     [                  
-        Button.url("Stats🎗", "https://t.me/OrekiProXBot?start=stats_callback"),
+        Button.url("text="🎗️ Help", callback_data="help_back"),
     ] 
 ]
 if __name__ == "__main__":
