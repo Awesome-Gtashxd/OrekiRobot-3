@@ -92,17 +92,17 @@ OREKI_STICKERS = (
 )
 
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/3b1c6afb8b8a3c3a8684c.jpg) 」────
-*Hey Prince Is Here! {},*
-*I am an Anime Themed Advance Group Management Bot With Lot Of Cool Features.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Uptime ~* `{}`
-❍ `{}` *Users, Across* `{}` *Chats.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Latest Version ~* Version 3
-❍ *Version Name ~* Pro Version
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-➪ Hit The *Help* Button Below To Know My Powers ××
+×⋆──────────────⋆×✧
+*ᴋᴏɴɪᴄʜɪᴡᴀ* {first} - *ꜱᴀɴ*
+
+*ɪ ᴀᴍ 𝐏ʀɪɴᴄᴇ 𝐎ʀᴇᴋɪ, ᴀ ꜰᴀꜱᴛ ᴀɴᴅ ᴍᴏᴅᴜʟᴀʀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴀꜱᴇᴅ ᴏɴ ᴛʜᴇ ᴀɴɪᴍᴇ* Hyouka..
+════════════════
+‣ *ᴜꜱᴇʀꜱ ~* `{}`
+‣ *ᴄʜᴀᴛꜱ ~* `{}`
+‣ *ᴜᴘᴛɪᴍᴇ ~* `{}`
+════════════════
+➛ ᴜꜱᴇ /help ᴛᴏ ᴛʜʀᴏᴜɢʜ ᴍʏ ᴄᴏᴍᴍᴀɴᴅꜱ ××
+×⋆──────────────⋆×✧
 """
 
 buttons = [
@@ -141,6 +141,11 @@ GROUP_START_IMG = (
     "https://telegra.ph/file/72cd1983bd254966d738e.mp4",
     "https://telegra.ph/file/c9e47d0c29898b6e58fd0.mp4",
 )
+
+PM_PIC = (
+    "https://graph.org/file/442d024c73f2f63f0cb99.jpg"
+    "https://graph.org/file/69a9de31949827e5f7ece.jpg"
+    "https://graph.org/file/9e914e5df13f8f3a4cf64.jpg"
 
 DONATE_STRING = """❂ I'm Free for Everyone ❂"""
 
@@ -201,7 +206,8 @@ def send_help(chat_id, text, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     OREKI_MOD.bot.send_message(
         chat_id=chat_id,
-        text=text,
+        photo=random.choice(PM_PIC)
+        caption=text,
         parse_mode=ParseMode.MARKDOWN,
         disable_web_page_preview=True,
         reply_markup=keyboard,
