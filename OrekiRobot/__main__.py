@@ -145,7 +145,7 @@ GROUP_START_IMG = (
 PM_PIC = (
     "https://graph.org/file/442d024c73f2f63f0cb99.jpg"
     "https://graph.org/file/69a9de31949827e5f7ece.jpg"
-    "https://graph.org/file/9e914e5df13f8f3a4cf64.jpg"
+    "https://graph.org/file/9e914e5df13f8f3a4cf64.jpg")
 
 DONATE_STRING = """❂ I'm Free for Everyone ❂"""
 
