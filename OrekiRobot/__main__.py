@@ -206,10 +206,9 @@ def send_help(chat_id, text, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     OREKI_MOD.bot.send_message(
         chat_id=chat_id,
-        photo=random.choice(PM_PIC)
+        photo=random.choice(PM_PIC),
         caption=text,
         parse_mode=ParseMode.MARKDOWN,
-        disable_web_page_preview=True,
         reply_markup=keyboard,
     )
 
