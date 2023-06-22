@@ -92,6 +92,7 @@ OREKI_STICKERS = (
 )
 
 PM_START_TEXT = """
+────「 [{}](https://graph.org/file/2894555e5d865dd189eb8.jpg) 」────
 ×⋆──────────────⋆×✧
 *ᴋᴏɴɪᴄʜɪᴡᴀ* {first} - *ꜱᴀɴ*
 
@@ -141,11 +142,6 @@ GROUP_START_IMG = (
     "https://telegra.ph/file/72cd1983bd254966d738e.mp4",
     "https://telegra.ph/file/c9e47d0c29898b6e58fd0.mp4",
 )
-
-PM_PIC = (
-    "https://graph.org/file/442d024c73f2f63f0cb99.jpg"
-    "https://graph.org/file/69a9de31949827e5f7ece.jpg"
-    "https://graph.org/file/9e914e5df13f8f3a4cf64.jpg")
 
 DONATE_STRING = """❂ I'm Free for Everyone ❂"""
 
@@ -206,9 +202,9 @@ def send_help(chat_id, text, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     OREKI_MOD.bot.send_message(
         chat_id=chat_id,
-        photo=random.choice(PM_PIC),
         caption=text,
         parse_mode=ParseMode.MARKDOWN,
+        disable_web_page_preview=True,
         reply_markup=keyboard,
     )
 
